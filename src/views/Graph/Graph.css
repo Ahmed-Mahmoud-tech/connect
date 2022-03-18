@@ -1,0 +1,82 @@
+.graph{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-graph{
+    position: absolute;
+    top: 25px;
+    text-align: center;
+}
+
+.gsk-graph{
+    width: 40%;
+}
+
+.wecan-graph, .gsk-graph{
+    margin-top: 10px;
+}
+
+.side{
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+}
+
+.color-map{
+    background-color: rgba(155, 155, 155, 0.4);
+    position: absolute;
+    width: fit-content;
+    right: 10%;
+    top: -10%;
+    font-weight: 600;
+}
+
+.color-row{
+    display: flex;
+    align-items: center;
+}
+
+.graph .box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.graph .b1{
+    background-color: #0C2141;
+}
+
+.graph .b2{
+    background-color: #A26233;
+}
+
+.graph .b3{
+    background-color: #8E847A;
+}
+
+@media screen and (max-width: 970px) {
+    .title-graph{
+        top: 0;
+    }
+    .color-map{
+        right: 5%;
+        top: 15%;
+    }
+    .canvas-container{
+        height: 50% !important;
+        width: 97%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .graph img{
+        max-width: 70%;
+    }
+
+    .graph .gsk-graph{
+        max-width: 30%;
+    }
+}

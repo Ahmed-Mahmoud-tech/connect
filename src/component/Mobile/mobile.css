@@ -1,0 +1,33 @@
+.mobile{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #aa0f10;
+    background-image: radial-gradient(#0c2141, #004285);
+    padding: 1rem 2rem;
+    position: fixed;
+}
+
+.mobile-content{
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.1;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.App{
+    overflow: hidden;
+}
